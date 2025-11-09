@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual Printing Services | CraftCopy Press</title>
+    <meta
+      name="description"
+      content="Premium manual printing services with fast turnaround, vivid color, and flexible binding options. Build and price your manual in minutes."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="container nav-container">
+        <a class="brand" href="#hero">CraftCopy Press</a>
+        <nav>
+          <a href="#features">Why Us</a>
+          <a href="#builder">Build Your Manual</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#process">Process</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="pill-btn">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-content">
+          <div>
+            <span class="eyebrow">Premium manual printing</span>
+            <h1>Professional manuals, on demand and on brand.</h1>
+            <p>
+              Bring your training, onboarding, or product documentation to life with
+              richly printed manuals. Customize every detail and have them shipped in as
+              little as two business days.
+            </p>
+            <div class="cta-group">
+              <a href="#builder" class="primary-btn">Start your manual</a>
+              <a href="#samples" class="ghost-btn">View sample specs</a>
+            </div>
+          </div>
+          <div class="hero-card" aria-hidden="true">
+            <div class="hero-card__badge">72 hour turnaround</div>
+            <div class="hero-card__body">
+              <h2>Top Seller Bundle</h2>
+              <ul>
+                <li>Spiral bound manuals</li>
+                <li>Full-color covers</li>
+                <li>120# gloss paper</li>
+                <li>Protective acetate overlay</li>
+              </ul>
+              <p class="hero-card__price">From $18.40 / copy</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2 class="section-title">Everything you need for manual perfection</h2>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">🎯</span>
+              <h3>Brand-accurate finishes</h3>
+              <p>
+                Choose premium paper stocks, specialty inks, and finishing touches that match
+                your brand standards.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">⚡️</span>
+              <h3>Lightning fast</h3>
+              <p>
+                Rush production delivers manuals in as little as two days without sacrificing
+                color accuracy or binding quality.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">📦</span>
+              <h3>Nationwide shipping</h3>
+              <p>
+                Direct fulfillment to multiple locations with real-time tracking and split
+                shipment options.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">🧩</span>
+              <h3>Flexible formats</h3>
+              <p>
+                Print training workbooks, technical manuals, quick-start guides, and more from
+                one streamlined dashboard.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="builder" class="section builder">
+        <div class="container">
+          <div class="builder-header">
+            <h2 class="section-title">Configure &amp; price your manual</h2>
+            <p>
+              Adjust page counts, bindings, finishes, and extras to see instant pricing. When
+              you're ready, submit your order to our production team.
+            </p>
+          </div>
+          <div class="builder-layout">
+            <form id="order-form" class="form-card" novalidate>
+              <fieldset class="form-section">
+                <legend>Project details</legend>
+                <label>
+                  Manual title
+                  <input type="text" name="title" placeholder="e.g. Onboarding Playbook" required />
+                </label>
+                <div class="split">
+                  <label>
+                    Page count
+                    <input type="number" name="pages" min="4" max="500" value="120" required />
+                  </label>
+                  <label>
+                    Copies
+                    <input type="number" name="copies" min="1" max="1000" value="25" required />
+                  </label>
+                </div>
+                <div class="split">
+                  <label>
+                    Color mode
+                    <select name="colorMode">
+                      <option value="bw">Black &amp; White</option>
+                      <option value="mixed" selected>Mixed Color</option>
+                      <option value="full">Full Color</option>
+                    </select>
+                  </label>
+                  <label>
+                    Binding
+                    <select name="binding">
+                      <option value="spiral" selected>Spiral</option>
+                      <option value="wire">Wire-O</option>
+                      <option value="perfect">Perfect Bound</option>
+                      <option value="saddle">Saddle Stitch</option>
+                    </select>
+                  </label>
+                </div>
+                <label>
+                  Paper stock
+                  <select name="paper">
+                    <option value="matte" selected>100# Matte</option>
+                    <option value="gloss">120# Gloss</option>
+                    <option value="recycled">80# Recycled</option>
+                  </select>
+                </label>
+                <fieldset class="form-subsection">
+                  <legend>Enhancements</legend>
+                  <label class="checkbox">
+                    <input type="checkbox" name="extras" value="laminate" />
+                    Laminated cover (+$1.50 per copy)
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="extras" value="tabs" />
+                    Index tabs (+$0.90 per tab set)
+                  </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="extras" value="proof" />
+                    Hard-copy proof (+$35.00 flat)
+                  </label>
+                </fieldset>
+                <label>
+                  Shipping speed
+                  <select name="shipping">
+                    <option value="standard" selected>Ground (5-7 days)</option>
+                    <option value="expedited">Expedited (3-4 days)</option>
+                    <option value="rush">Rush (2 days)</option>
+                  </select>
+                </label>
+              </fieldset>
+
+              <fieldset class="form-section">
+                <legend>Contact &amp; delivery</legend>
+                <label>
+                  Contact name
+                  <input type="text" name="contact" placeholder="Your full name" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="you@company.com" required />
+                </label>
+                <label>
+                  Shipping zip code
+                  <input type="text" name="zip" placeholder="e.g. 94105" pattern="\\d{5}" required />
+                </label>
+                <label>
+                  Special instructions
+                  <textarea name="notes" rows="4" placeholder="Upload link, delivery details, or finishing notes"></textarea>
+                </label>
+                <button type="submit" class="primary-btn full-width">Submit project for review</button>
+                <p class="form-disclaimer">
+                  You'll receive a confirmation email with payment link and production timeline
+                  within one business hour.
+                </p>
+              </fieldset>
+            </form>
+
+            <aside class="summary-card" aria-live="polite">
+              <h3>Your manual estimate</h3>
+              <div class="summary-line">
+                <span>Per copy</span>
+                <span id="summary-per-copy">$0.00</span>
+              </div>
+              <div class="summary-line">
+                <span>Total project</span>
+                <span id="summary-total">$0.00</span>
+              </div>
+              <dl class="summary-breakdown" id="summary-breakdown"></dl>
+              <div class="summary-highlight">
+                <p>Need help with design or layout?</p>
+                <p class="small">Add creative services starting at $95/hour.</p>
+                <a class="ghost-btn full-width" href="#contact">Talk to a specialist</a>
+              </div>
+              <div class="summary-badge">No hidden fees • Color calibrated • Satisfaction guaranteed</div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Popular manual bundles</h2>
+          <div class="card-grid">
+            <article class="price-card">
+              <h3>Training Essentials</h3>
+              <p class="price">From $12.20</p>
+              <ul>
+                <li>Black &amp; white interior</li>
+                <li>100# matte paper</li>
+                <li>Spiral binding</li>
+                <li>Acetate cover + vinyl back</li>
+              </ul>
+              <a href="#builder" class="ghost-btn">Customize</a>
+            </article>
+            <article class="price-card featured">
+              <span class="badge">Most popular</span>
+              <h3>Product Launch Kit</h3>
+              <p class="price">From $18.40</p>
+              <ul>
+                <li>Full-color interior</li>
+                <li>120# gloss paper</li>
+                <li>Wire-O binding</li>
+                <li>Spot UV cover</li>
+              </ul>
+              <a href="#builder" class="primary-btn">Build this</a>
+            </article>
+            <article class="price-card">
+              <h3>Compliance Handbook</h3>
+              <p class="price">From $15.10</p>
+              <ul>
+                <li>Mixed color printing</li>
+                <li>Perfect bound</li>
+                <li>Soft touch laminate</li>
+                <li>Custom slipcase available</li>
+              </ul>
+              <a href="#builder" class="ghost-btn">Customize</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="samples" class="section">
+        <div class="container">
+          <h2 class="section-title">Sample specifications</h2>
+          <div class="samples">
+            <article>
+              <h3>Technical service manual</h3>
+              <p>
+                260 pages • Mixed color • 80# recycled • Tabbed sections • Coil bound • Double-sided
+                printing • Spot color warning callouts
+              </p>
+            </article>
+            <article>
+              <h3>Onboarding playbook</h3>
+              <p>
+                140 pages • Full color • 120# gloss • Laminated covers • Wire-O binding • Slipcase •
+                QR code quick links
+              </p>
+            </article>
+            <article>
+              <h3>Sales enablement kit</h3>
+              <p>
+                90 pages • Black &amp; white interior • 100# matte • Perfect bound • Soft touch finish •
+                Branded belly band
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section alt">
+        <div class="container">
+          <h2 class="section-title">From upload to delivery in four steps</h2>
+          <ol class="process-list">
+            <li>
+              <h3>Upload &amp; review</h3>
+              <p>Share print-ready files or request preflight assistance from our production team.</p>
+            </li>
+            <li>
+              <h3>Proof approval</h3>
+              <p>Receive a digital or hard-copy proof to verify color, pagination, and finishing.</p>
+            </li>
+            <li>
+              <h3>Production</h3>
+              <p>
+                Your manuals move through calibrated printers, bindery, and finishing for consistent
+                results.
+              </p>
+            </li>
+            <li>
+              <h3>Shipping &amp; fulfillment</h3>
+              <p>Select from ground, expedited, or rush delivery with tracking and split shipment options.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <h2 class="section-title">Trusted by training and enablement teams</h2>
+          <div class="testimonial-grid">
+            <figure>
+              <blockquote>
+                “CraftCopy is our go-to partner for onboarding manuals. The color accuracy and binding quality
+                is unmatched, and we love the quick turnaround.”
+              </blockquote>
+              <figcaption>
+                <span class="name">Alex Morgan</span>
+                <span class="role">Director of People Ops, Fluxwave</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                “We ship manuals to 120 franchise locations nationwide. The CraftCopy team handles everything
+                from kitting to tracking updates.”
+              </blockquote>
+              <figcaption>
+                <span class="name">Priya Patel</span>
+                <span class="role">VP Enablement, UrbanBite</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                “The instant pricing tool makes it easy for our product managers to budget print runs and lock
+                in production dates.”
+              </blockquote>
+              <figcaption>
+                <span class="name">Jordan Ellis</span>
+                <span class="role">Product Operations, CircuitIQ</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Frequently asked questions</h2>
+          <div class="faq-grid">
+            <details open>
+              <summary>How fast can you produce manuals?</summary>
+              <p>
+                Standard production is 4-5 business days. Rush orders can be completed in as little as 48 hours
+                after proof approval.
+              </p>
+            </details>
+            <details>
+              <summary>Can you help with design or layout?</summary>
+              <p>
+                Yes. Our design specialists can clean up files, adjust bleeds, and add branded elements. Hourly
+                creative services start at $95.
+              </p>
+            </details>
+            <details>
+              <summary>Do you offer fulfillment to multiple addresses?</summary>
+              <p>
+                Absolutely. Provide your address list and we can split shipments with individual tracking
+                numbers for each location.
+              </p>
+            </details>
+            <details>
+              <summary>What file formats do you accept?</summary>
+              <p>We accept PDF, InDesign packages, or PowerPoint files. We provide preflight checks on every order.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container contact-card">
+          <div>
+            <h2 class="section-title">Ready to print?</h2>
+            <p>
+              Submit the configuration form or connect with a project specialist for complex runs, bulk pricing,
+              and account setup.
+            </p>
+            <ul class="contact-list">
+              <li><span>📞</span> (800) 555-0199</li>
+              <li><span>✉️</span> hello@craftcopypress.com</li>
+              <li><span>📍</span> 2458 Market Street, Suite 300, San Francisco, CA</li>
+            </ul>
+          </div>
+          <div class="contact-cta">
+            <h3>Schedule a consultation</h3>
+            <p>Book a 15-minute call to review specs, timelines, and shipping logistics.</p>
+            <a class="primary-btn full-width" href="mailto:hello@craftcopypress.com?subject=Manual%20Printing%20Consultation">Book a call</a>
+            <p class="small">Looking for enterprise pricing? Ask about dedicated account management.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <span class="brand">CraftCopy Press</span>
+          <p class="small">Specialists in manual, workbook, and training material printing.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#builder">Build</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <p class="small">© <span id="year"></span> CraftCopy Press. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
